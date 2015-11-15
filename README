@@ -1,0 +1,42 @@
+=============================================================================
+README for Catminator
+=============================================================================
+INTRODUCTION :
+
+The application has been created for test purposes to simulate the random
+process of searching cats by their owners on the tube stations of London.
+
+-----------------------------------------------------------------------------
+CODE ORGANIZATION:
+The project consists of the following classes:
+
+OwnerCat.java - consists of Cat and Owner classes which represent information
+                about particular cat and particular owner (their location,
+				visited station for a human etc).
+
+StationManager.java - includes Station and StationManager classes which store
+                     information about stations' graph ans Station itself with
+					 the possible routes to move.
+
+
+MetricsController.java - stores and calculates information about the search
+                         process such as total number of cats, found cats,
+						 total moves made while searching etc.
+
+Catminator.java - This is the main component of the search cat application.
+                  It creates number of cats and owners with the corresponding
+                  ids, runs the initialization and search process.
+
+
+
+-----------------------------------------------------------------------------
+BUILDING AND RUN INSTRUCTIONS :
+
+Can be built by creating project in the any java IDE and adding all files mentioned
+above there.
+In order to run please either run the project in IDE or from console by executing:
+java Catminator
+
+NOTE
+Please put tfl_stations.csv and tfl_connections.csv in the same directory as the class files.
+In case of running in IDE you could just add them to the project.
